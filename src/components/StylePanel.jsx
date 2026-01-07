@@ -14,7 +14,7 @@ function StylePanel({
   const [isExpanded, setIsExpanded] = useState(true)
   const [openSections, setOpenSections] = useState({
     Themes: false,
-    Board: true,
+    Board: false,
     Title: false,
     Cells: false,
     Stamps: false,
