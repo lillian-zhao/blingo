@@ -1,0 +1,197 @@
+/* Custom Font Definitions */
+
+/* Array font - using TTF files */
+/* Using local() to match the font's internal name first, then fallback to our URL */
+@font-face {
+  font-family: 'Array';
+  src: local('Array Regular'),
+       local('Array-Regular'),
+       local('Array'),
+       url('/fonts/Array_Complete/Fonts/TTF/Array-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array';
+  src: local('Array SemiBold'),
+       local('Array-Semibold'),
+       url('/fonts/Array_Complete/Fonts/TTF/Array-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Array';
+  src: local('Array Bold'),
+       local('Array-Bold'),
+       url('/fonts/Array_Complete/Fonts/TTF/Array-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Boxing font */
+@font-face {
+  font-family: 'Boxing';
+  src: local('Boxing Regular'),
+       local('Boxing-Regular'),
+       local('Boxing'),
+       url('/fonts/Boxing_Complete/Fonts/WEB/fonts/Boxing-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nunito font - working, keeping as is */
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito_Complete/Fonts/WEB/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito_Complete/Fonts/WEB/fonts/Nunito-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito_Complete/Fonts/WEB/fonts/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Stardom font */
+@font-face {
+  font-family: 'Stardom';
+  src: local('Stardom Regular'),
+       local('Stardom-Regular'),
+       local('Stardom'),
+       url('/fonts/Stardom_Complete/Fonts/WEB/fonts/Stardom-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Telma font */
+@font-face {
+  font-family: 'Telma';
+  src: local('Telma Light'),
+       local('Telma-Light'),
+       url('/fonts/Telma_Complete/Fonts/WEB/fonts/Telma-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: local('Telma Regular'),
+       local('Telma-Regular'),
+       local('Telma'),
+       url('/fonts/Telma_Complete/Fonts/WEB/fonts/Telma-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: local('Telma Medium'),
+       local('Telma-Medium'),
+       url('/fonts/Telma_Complete/Fonts/WEB/fonts/Telma-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: local('Telma Bold'),
+       local('Telma-Bold'),
+       url('/fonts/Telma_Complete/Fonts/WEB/fonts/Telma-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telma';
+  src: local('Telma Black'),
+       local('Telma-Black'),
+       url('/fonts/Telma_Complete/Fonts/WEB/fonts/Telma-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* BespokeSerif font */
+@font-face {
+  font-family: 'BespokeSerif';
+  src: local('BespokeSerif Light'),
+       local('BespokeSerif-Light'),
+       local('BespokeSerif'),
+       url('/fonts/BespokeSerif_Complete/Fonts/WEB/fonts/BespokeSerif-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BespokeSerif';
+  src: local('BespokeSerif Regular'),
+       local('BespokeSerif-Regular'),
+       url('/fonts/BespokeSerif_Complete/Fonts/WEB/fonts/BespokeSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BespokeSerif';
+  src: local('BespokeSerif Medium'),
+       local('BespokeSerif-Medium'),
+       url('/fonts/BespokeSerif_Complete/Fonts/WEB/fonts/BespokeSerif-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BespokeSerif';
+  src: local('BespokeSerif Bold'),
+       local('BespokeSerif-Bold'),
+       url('/fonts/BespokeSerif_Complete/Fonts/WEB/fonts/BespokeSerif-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BespokeSerif';
+  src: local('BespokeSerif Extrabold'),
+       local('BespokeSerif-Extrabold'),
+       url('/fonts/BespokeSerif_Complete/Fonts/WEB/fonts/BespokeSerif-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BespokeSerif';
+  src: local('BespokeSerif Extrabold Italic'),
+       local('BespokeSerif-ExtraboldItalic'),
+       url('/fonts/BespokeSerif_Complete/Fonts/WEB/fonts/BespokeSerif-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
