@@ -339,18 +339,30 @@ function BingoBoard({ size, cells, onCellChange, styles, setStyles }) {
                     <img 
                       src={styles.centerImage} 
                       alt="Center" 
-                      className="max-w-full max-h-full object-contain"
+                      className="object-contain"
                       style={{ 
-                        maxWidth: '80%',
-                        maxHeight: '80%',
+                        width: `${styles.centerImageSize || 80}%`,
+                        height: `${styles.centerImageSize || 80}%`,
                       }}
                     />
                   ) : styles.centerStyle === 'star' ? (
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill={styles.textColor || '#1f2937'}>
+                    <svg 
+                      width={`${styles.centerSquareSize || 60}%`} 
+                      height={`${styles.centerSquareSize || 60}%`} 
+                      viewBox="0 0 24 24" 
+                      fill={styles.textColor || '#1f2937'}
+                      style={{ minWidth: '40px', minHeight: '40px' }}
+                    >
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   ) : styles.centerStyle === 'sparkle' ? (
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill={styles.textColor || '#1f2937'}>
+                    <svg 
+                      width={`${styles.centerSquareSize || 60}%`} 
+                      height={`${styles.centerSquareSize || 60}%`} 
+                      viewBox="0 0 24 24" 
+                      fill={styles.textColor || '#1f2937'}
+                      style={{ minWidth: '40px', minHeight: '40px' }}
+                    >
                       <path d="M12 0l2.5 7.5L22 10l-7.5 2.5L12 20l-2.5-7.5L2 10l7.5-2.5L12 0z"/>
                       <circle cx="6" cy="6" r="1" fill={styles.textColor || '#1f2937'}/>
                       <circle cx="18" cy="18" r="1" fill={styles.textColor || '#1f2937'}/>
@@ -358,11 +370,23 @@ function BingoBoard({ size, cells, onCellChange, styles, setStyles }) {
                       <circle cx="6" cy="18" r="1" fill={styles.textColor || '#1f2937'}/>
                     </svg>
                   ) : styles.centerStyle === 'heart' ? (
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill={styles.textColor || '#1f2937'}>
+                    <svg 
+                      width={`${styles.centerSquareSize || 60}%`} 
+                      height={`${styles.centerSquareSize || 60}%`} 
+                      viewBox="0 0 24 24" 
+                      fill={styles.textColor || '#1f2937'}
+                      style={{ minWidth: '40px', minHeight: '40px' }}
+                    >
                       <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                     </svg>
                   ) : styles.centerStyle === 'circle' ? (
-                    <svg width="60" height="60" viewBox="0 0 24 24" fill={styles.textColor || '#1f2937'}>
+                    <svg 
+                      width={`${styles.centerSquareSize || 60}%`} 
+                      height={`${styles.centerSquareSize || 60}%`} 
+                      viewBox="0 0 24 24" 
+                      fill={styles.textColor || '#1f2937'}
+                      style={{ minWidth: '40px', minHeight: '40px' }}
+                    >
                       <circle cx="12" cy="12" r="10" stroke={styles.textColor || '#1f2937'} strokeWidth="2" fill="none"/>
                       <circle cx="12" cy="12" r="6" fill={styles.textColor || '#1f2937'}/>
                     </svg>

@@ -110,6 +110,8 @@ function App() {
     stampCells: [], // Array of cell indices that have stamps
     centerStyle: 'text',
     centerImage: null,
+    centerSquareSize: 60, // Size as percentage for shapes (default 60%)
+    centerImageSize: 80, // Size as percentage for custom image (default 80%)
     title: 'BINGO',
     titleSize: 'large',
   })

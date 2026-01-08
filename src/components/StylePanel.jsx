@@ -493,6 +493,22 @@ function StylePanel({
                       <option value="circle">Circle</option>
                       <option value="image">Custom Image</option>
                     </select>
+                    {styles.centerStyle !== 'text' && styles.centerStyle !== 'image' && (
+                      <div className="mt-2">
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Shape Size: {styles.centerSquareSize || 60}%
+                        </label>
+                        <input
+                          type="range"
+                          min="20"
+                          max="100"
+                          step="5"
+                          value={styles.centerSquareSize || 60}
+                          onChange={(e) => updateStyle('centerSquareSize', parseInt(e.target.value))}
+                          className="w-full"
+                        />
+                      </div>
+                    )}
                     {styles.centerStyle === 'image' && (
                       <div className="mt-2">
                         <input
@@ -511,18 +527,34 @@ function StylePanel({
                           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
                         />
                         {styles.centerImage && (
-                          <div className="mt-2 relative">
-                            <img 
-                              src={styles.centerImage} 
-                              alt="Center preview" 
-                              className="max-w-full h-24 object-contain border border-gray-300 rounded"
-                            />
-                            <button
-                              onClick={() => updateStyle('centerImage', null)}
-                              className="mt-2 text-xs text-red-600 hover:text-red-800 underline"
-                            >
-                              Remove image
-                            </button>
+                          <div className="mt-2 space-y-3">
+                            <div>
+                              <label className="block text-sm font-medium text-gray-700 mb-2">
+                                Image Size: {styles.centerImageSize || 80}%
+                              </label>
+                              <input
+                                type="range"
+                                min="20"
+                                max="100"
+                                step="5"
+                                value={styles.centerImageSize || 80}
+                                onChange={(e) => updateStyle('centerImageSize', parseInt(e.target.value))}
+                                className="w-full"
+                              />
+                            </div>
+                            <div className="relative">
+                              <img 
+                                src={styles.centerImage} 
+                                alt="Center preview" 
+                                className="max-w-full h-24 object-contain border border-gray-300 rounded"
+                              />
+                              <button
+                                onClick={() => updateStyle('centerImage', null)}
+                                className="mt-2 text-xs text-red-600 hover:text-red-800 underline"
+                              >
+                                Remove image
+                              </button>
+                            </div>
                           </div>
                         )}
                       </div>
